@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Accessible focus styles */
+  :focus-visible {
+    outline: 2px solid #2A5285;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /* Respect reduced motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* Selection colour matching brand */
+  ::selection {
+    background-color: #1B3A5F;
+    color: white;
+  }
+}
+
+@layer components {
+  /* Skip to main content link for keyboard users */
+  .skip-link {
+    @apply absolute -top-full left-4 z-[100] bg-navy text-white px-4 py-2 rounded-b-lg font-medium;
+    transition: top 0.15s ease;
+  }
+
+  .skip-link:focus {
+    @apply top-0;
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar for horizontal scroll areas */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
