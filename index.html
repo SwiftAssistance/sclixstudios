@@ -1,56 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scalix Studios | Marketing for Trades</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              navy: {
-                DEFAULT: '#1B3A5F',
-                light: '#2A5285',
-                dark: '#122640',
-              },
-            },
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            },
-          },
+
+    <!-- Primary Meta -->
+    <title>Scalix Studios | Marketing for Tradesmen in Windsor &amp; Thames Valley</title>
+    <meta name="description" content="Scalix Studios helps tradesmen across Windsor and the Thames Valley get found online, win more quotes, and grow their business. Websites, Google Ads, SEO and more." />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#1B3A5F" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Scalix Studios | Marketing for Tradesmen" />
+    <meta property="og:description" content="We help tradesmen across Windsor and the Thames Valley get found online, win more quotes, and stop relying on word of mouth alone." />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:site_name" content="Scalix Studios" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Scalix Studios | Marketing for Tradesmen" />
+    <meta name="twitter:description" content="Websites, Google Ads, SEO and branding for tradesmen in Windsor and the Thames Valley." />
+
+    <!-- Fonts: preconnect then load -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Structured Data: LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Scalix Studios",
+      "description": "Trade marketing agency helping tradesmen in Windsor and the Thames Valley grow their business online.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Windsor",
+        "addressRegion": "Berkshire",
+        "addressCountry": "GB"
+      },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 51.4816,
+          "longitude": -0.6044
         },
-      }
+        "geoRadius": "30 mi"
+      },
+      "serviceType": ["Web Design", "Search Engine Optimisation", "Google Ads Management", "Social Media Marketing", "Brand Identity"],
+      "priceRange": "$$"
+    }
     </script>
-    <style>
-      /* Hide scrollbar for horizontal scroll areas */
-      .no-scrollbar::-webkit-scrollbar {
-        display: none;
-      }
-      .no-scrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-    </style>
-  <script type="importmap">
-{
-  "imports": {
-    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
-    "framer-motion": "https://esm.sh/framer-motion@^12.34.0",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
-  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-navy selection:text-white">
+  </head>
+  <body class="bg-slate-50 text-slate-900 font-sans">
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <noscript>
+      <div style="padding: 2rem; text-align: center; font-family: sans-serif;">
+        <h1>Scalix Studios</h1>
+        <p>You need to enable JavaScript to use this site. Please enable it in your browser settings and reload the page.</p>
+      </div>
+    </noscript>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
